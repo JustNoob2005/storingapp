@@ -170,14 +170,13 @@ label{
     width: 600px;
 }
 
+tr:first-child {
+  background-color: darkgray;
+}
 
-
-
-
-
-
-
-
+tr:nth-child(odd) {
+  background-color: gray;
+}
 
 
 

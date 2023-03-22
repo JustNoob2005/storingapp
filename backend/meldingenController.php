@@ -2,17 +2,17 @@
 
 //Variabelen vullen
 $attractie = $_POST['attractie'];
-$type = "achtbaan";
+$type = $_POST['types'];
 $capaciteit = $_POST['capaciteit']; 
 $melder = $_POST['melder'];
 $overig = $_POST['overig'];
 
 if(isset($_POST['prioriteit']))
 {
-    $prioriteit = true;
+    $prioriteit = 1;
 }
 else {
-    $prioriteit = false;
+    $prioriteit = 0;
 }
 
 //1. Verbinding
