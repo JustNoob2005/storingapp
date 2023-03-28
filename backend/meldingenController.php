@@ -1,5 +1,5 @@
 <?php
-
+$action = $_POST['action'];
 if($action == "create"){
 
 
@@ -9,7 +9,7 @@ if($action == "create"){
     $capaciteit = $_POST['capaciteit']; 
     $melder = $_POST['melder'];
     $overig = $_POST['overig'];
-    $action = $_POST['action'];
+
 
     if(isset($_POST['prioriteit']))
     {
@@ -40,4 +40,5 @@ if($action == "create"){
     header("Location: ../meldingen/index.php?msg=Melding opgeslagen");
         
 }
+else if($action == "update")
 ?>
