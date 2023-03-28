@@ -15,6 +15,7 @@
 
         <form action="../backend/meldingenController.php" method="POST">
         
+            <input type="hidden"name="action"value="create">
             <div class="form-group">
                 <label for="attractie">Naam attractie:</label>
                 <input type="text" name="attractie" id="attractie" class="form-input">
@@ -49,7 +50,6 @@
                 <label for="overig">Overige info: </label>
                 <textarea name="overig" id="overig" class="form-input" rows="4"></textarea>
             </div>
-            
             <input type="submit" value="Verstuur melding">
 
         </form>

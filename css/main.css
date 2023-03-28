@@ -159,6 +159,11 @@ th{
     margin: 1rem 0;
 }
 
+.form-group2 {
+  margin: 1rem 0;
+  display: flex;
+}
+
 label{
     cursor: pointer;
     display: inline-block;
