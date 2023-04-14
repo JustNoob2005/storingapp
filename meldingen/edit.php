@@ -45,23 +45,28 @@
 
         <form action="../backend/meldingenController.php" method="POST">
             <!-- (voeg hier opdracht 7 toe) -->
-            <input type="hidden"name="action"value="update">
-            <input type="hidden"name="id"value="<?php echo $id;?>">
+            <input type="hidden" name="action" value="update">
+            <input type="hidden" name="id" value=" <?php echo $id;?>">
             <div class="form-group">
                 <label>Naam attractie:</label>
                 <?php echo $melding['attractie']; ?>
             </div>
+
+            <div class="form-group">
+                <label>Type attractie:</label>
+                <?php echo $melding['type']; ?>
+            </div>
             <!-- Zorg dat het type wordt getoond, net als de naam hierboven -->
             <div class="form-group">
-                <label for="capaciteit">Capaciteit p/uur:</label>
-                <?php echo $melding['capaciteit']; ?>
+                <label for="capaciteit" name="capaciteit">Capaciteit p/uur:</label>
+                <input type="text" name="capaciteit" value="<?php echo $melding['capaciteit']; ?>">
             </div>
             <div class="form-group">
                 <label for="prioriteit">Prio:</label>
                 <!-- Let op: de checkbox blijft nu altijd uit, pas dit nog aan -->
-                
-                <input type="checkbox" name="prioriteit" id="prioriteit" <?php if ($melding['prioriteit'] == 1){echo 'checked';}?>>
+
                 <label for="prioriteit">Melding met prioriteit</label>
+                <input type="checkbox" name="prioriteit" id="prioriteit" <?php if ($melding['prioriteit'] == 1){echo 'checked';}?>>
             </div>
             <div class="form-group"> 
                 <label for="melder">Naam melder:</label>
@@ -69,13 +74,18 @@
                 <input type="text" name="melder" id="melder" class="form-input" <?php $melder = $melding['melder']; echo "value='$melder'";?>>
             </div>
             <div class="form-group">
-                <label for="overig">Overige info:</label>
+                <label for="overig" name="overig">Overige info:</label>
                 <textarea name="overig" id="overig" class="form-input" rows="4"><?php echo $melding['overige_info'] ?></textarea>
             </div>
             
             <input type="submit" value="Melding opslaan">
             
-
+        </form>
+        <hr>
+        <form action="../backend/meldingenController.php" method="POST">
+            <input type="hidden" name="action" value="delete">
+            <input type="hidden" name="id" value="<?php echo $id; ?>">
+            <input type="submit" value="Verwijderen">
         </form>
     </div>  
 
