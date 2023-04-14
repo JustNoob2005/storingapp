@@ -65,17 +65,42 @@ if($action == "create"){
 }
 if($action == "update")
 {
-    $id  = $_POST['id'];
-    print_r($_POST);
-    $capaciteit = $_POST['capaciteit'];
-    $melder = $_POST['melder'];
-    $overig = $_POST['overig'];
+    //Variabelen vullen
+    if (isset($_POST['attractie'])) {
+        $attractie = $_POST['attractie'];
+    } else {
+        die("attractie is not set.");
+    }
+    
+    if (isset($_POST['types'])) {
+        $type = $_POST['types'];
+    } else {
+        die("types is not set.");
+    }
+    
+    if (isset($_POST['capaciteit'])) {
+        $capaciteit = $_POST['capaciteit'];
+    } else {
+        die("capaciteit is not set.");
+    }
+    
+    if (isset($_POST['melder'])) {
+        $melder = $_POST['melder'];
+    } else {
+        die("melder is not set.");
+    }
+    
+    if (isset($_POST['overig'])) {
+        $overig = $_POST['overig'];
+    } else {
+        die("overig is not set.");
+    }
+    
     if(isset($_POST['prioriteit']))
     {
         $prioriteit = 1;
     }
-    else
-    {
+    else {
         $prioriteit = 0;
     }
     //..........................
