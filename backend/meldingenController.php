@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $action = $_POST['action'];
 if($action == "create"){
 
@@ -66,17 +68,6 @@ if($action == "create"){
 if($action == "update")
 {
     //Variabelen vullen
-    if (isset($_POST['attractie'])) {
-        $attractie = $_POST['attractie'];
-    } else {
-        die("attractie is not set.");
-    }
-    
-    if (isset($_POST['types'])) {
-        $type = $_POST['types'];
-    } else {
-        die("types is not set.");
-    }
     
     if (isset($_POST['capaciteit'])) {
         $capaciteit = $_POST['capaciteit'];
@@ -102,6 +93,11 @@ if($action == "update")
     }
     else {
         $prioriteit = 0;
+    }
+
+    if(isset($_POST['id']))
+    {
+        $id = $_POST['id'];
     }
     //..........................
     //..........................

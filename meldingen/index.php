@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!doctype html>
 <html lang="nl">
 
@@ -35,6 +37,7 @@
                 <tr>
                     <th>Attractie</th>
                     <th>Type</th>
+                    <th>Capaciteit</th>
                     <th>Melder</th>
                     <th>Overige info</th>
                     <th>Aanpassen</th>
@@ -43,6 +46,7 @@
                     <tr>
                         <td><?php echo $melding['attractie'];?></td>
                         <td><?php echo $melding['type'];?></td>
+                        <td><?php echo $melding['capaciteit'] ?></td>
                         <td><?php echo $melding['melder'];?></td>
                         <td><?php echo $melding['overige_info'];?></td>
                         <td><?php echo "<a href='edit.php?id={$melding['id']}'>aanpassen</a>"; ?></td>
