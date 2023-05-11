@@ -1,4 +1,4 @@
-<?php require_once('security.php'); ?>
+<?php session_start(); ?>
 
 <!doctype html>
 <html lang="nl">
