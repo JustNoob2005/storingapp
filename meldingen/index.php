@@ -4,7 +4,7 @@
 <html lang="nl">
 
 <head>
-    <title>StoringApp / Meldingen</title>
+    <title>StoringApp | Meldingen</title>
     <?php require_once '../head.php'; ?>
 </head>
 

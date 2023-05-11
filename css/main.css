@@ -164,6 +164,34 @@ th{
   display: flex;
 }
 
+/* .msgEl{
+  margin-top: 40px;
+  background-color: green;
+  border-radius: 10px;
+  aspect-ratio: 1/0.5;
+  width: 10%;
+  padding: 50;
+  margin: auto;
+  vertical-align: middle;
+}
+
+.msgEl p{
+  display: flex;
+  text-align: center;
+  text
+  
+} */
+.centerTesting{
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+  width: 10%;
+  border-radius: 10px;
+  padding: 2% 5px;
+  background-color: blue;
+  color: white;
+}
+
 label{
     cursor: pointer;
     display: inline-block;
