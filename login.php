@@ -14,6 +14,9 @@
     if(isset($_SESSION['id'])){
         header("Location: index.php");
     }?>
+    <?php if (isset($_GET['msg'])): ?>
+            <p class="centerTesting"><?php echo($_GET['msg']); ?></p>
+        <?php endif ?>
 
 
     <div class="container home">

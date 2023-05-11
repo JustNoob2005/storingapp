@@ -1,5 +1,5 @@
 <?php
-session_start();
+require_once('security.php');
 
 $action = $_POST['action'];
 if($action == "create"){
