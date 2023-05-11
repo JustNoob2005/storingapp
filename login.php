@@ -11,11 +11,11 @@
 <body>
 
     <?php require_once 'header.php'; 
-    if(isset($_SESSION['id'])){
-        header("Location: index.php");
+    if(isset($_SESSION['user_id'])){
+        header("Location: index.php?msg=Je bent al ingelogd");
     }?>
     <?php if (isset($_GET['msg'])): ?>
-            <p class="centerTesting"><?php echo($_GET['msg']); ?></p>
+            <p class="msgEl"><?php echo($_GET['msg']); ?></p>
         <?php endif ?>
 
 

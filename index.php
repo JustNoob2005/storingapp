@@ -13,7 +13,7 @@
     <?php require_once 'header.php'; ?>
 
         <?php if (isset($_GET['msg'])): ?>
-            <p class="centerTesting"><?php echo($_GET['msg']); ?></p>
+            <p class="msgEl"><?php echo($_GET['msg']); ?></p>
         <?php endif ?>
 
 
