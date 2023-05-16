@@ -192,6 +192,11 @@ th{
   color: white;
 }
 
+.filter-group{
+  display: flex;
+  justify-content: space-between;
+}
+
 label{
     cursor: pointer;
     display: inline-block;

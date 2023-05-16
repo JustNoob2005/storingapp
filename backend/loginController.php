@@ -19,12 +19,13 @@ $useraccount = $statement->fetch(PDO::FETCH_ASSOC);
 
 if($statement->rowCount() < 1)
 {
-    die("Error: account bestaat niet");
+    header("Location: ../login.php?msg=Wachtwoord onjuist!");
 }
 
 if(!password_verify($password,$useraccount['password']))
 {
-    die("Error:wachtwoord niet juist!");
+    header("Location: ../login.php?msg=Wachtwoord onjuist!");
+    exit;
 }
 
 $_SESSION['user_id'] = $useraccount['id'];
