@@ -216,9 +216,14 @@ tr:nth-child(odd) {
   background-color: gray;
 }
 
+a{
+  text-decoration: none;
+}
 
-
-
+.loginBut{
+  display: flex;
+  justify-content: space-between;
+}
 
 /* ==========================================================================
    Helper classes

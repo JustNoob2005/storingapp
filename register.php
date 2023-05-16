@@ -31,11 +31,14 @@
                 <label for="password">Wachtwoord:</label>
                 <input type="password" name="password" id="password">
             </div>
-            <input type="hidden" name="action" id="action" value="Signin">
+            <div class="form-group">
+                <label for="passwordcheck">Herhaal Wachtwoord:</label>
+                <input type="password" name="passwordcheck" id="passwordcheck">
+            </div>
+            <input type="hidden" name="action" id="action" value="Signup">
 
-            <div class="loginBut">
-                <input type="submit" value="Login">
-                <a href="register.php">Ik heb nog geen account</a>
+            <div>
+                <input type="submit" value="register">
             </div>
         </form>
     </div>
